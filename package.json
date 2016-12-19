@@ -1,0 +1,29 @@
+{
+  "name": "node-mysql-dbdeploy",
+  "version": "1.0.0",
+  "description": "DB Deploy clone for node and mysql. See http://dbdeploy.com for concepts.",
+  "main": "dbdeploy.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simnix/node-mysql-dbdeploy.git"
+  },
+  "keywords": [
+    "MySQL",
+    "Database",
+    "Migration"
+  ],
+  "author": "Peter Simmons <pete@simnix.co.nz>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/simnix/node-mysql-dbdeploy/issues"
+  },
+  "homepage": "https://github.com/simnix/node-mysql-dbdeploy#readme",
+  "dependencies": {
+    "debug": "^2.4.5",
+    "mysql": "^2.12.0",
+    "underscore": "^1.8.3"
+  }
+}
