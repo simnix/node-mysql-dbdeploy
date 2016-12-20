@@ -1,6 +1,6 @@
 {
   "name": "node-mysql-dbdeploy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "DB Deploy clone for node and mysql. See http://dbdeploy.com for concepts.",
   "main": "index.js",
   "scripts": {
