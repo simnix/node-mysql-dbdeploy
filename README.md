@@ -17,6 +17,7 @@ npm install --save node-mysql-dbdeploy
 ## Usage
 
 ```
+var util = require('util');
 var dbdeploy = require('node-mysql-dbdeploy');
 var config = {
   "db" : {
@@ -34,6 +35,10 @@ var config = {
   }
 };
 dbdeploy(config, function complete(err, config) {
-
+  if (err) {
+    util.log(util.format('dbdeploy error: ', err));
+  }
+  util.log('dbdeploy: finished');
+  process.exit();
 });
 ```
