@@ -2,9 +2,10 @@
   "name": "node-mysql-dbdeploy",
   "version": "1.0.0",
   "description": "DB Deploy clone for node and mysql. See http://dbdeploy.com for concepts.",
-  "main": "dbdeploy.js",
+  "main": "index.js",
   "scripts": {
-    "test": "mocha test"
+    "test": "mocha test",
+    "test-travis": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/*"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,15 @@
     "debug": "^2.4.5",
     "mysql": "^2.12.0",
     "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.15",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0",
+    "mocha-lcov-reporter": "^1.2.0",
+    "sinon": "^1.17.6"
+  },
+  "engines": {
+    "node": ">= 4"
   }
 }
